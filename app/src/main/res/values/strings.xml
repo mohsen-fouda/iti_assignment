@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ITI LAB</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="password">password</string>
+    <string name="log_in">Log in</string>
+    <string name="user_name">User Name</string>
+    <string name="welcome">Welcome</string>
+</resources>
+

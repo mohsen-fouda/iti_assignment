@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#252B48"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="230dp"
+        android:layout_height="135dp"
+        android:src="@drawable/baseline_cloud_done_24"
+        app:layout_constraintBottom_toTopOf="@+id/userNameEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+    </ImageView>
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="22dp"
+        android:autofillHints=""
+        android:background="@drawable/corner_shape"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:paddingHorizontal="8dp"
+        android:textColorHint="#E0F7FA"
+        android:textSize="15dp"
+        android:textColor="#F7E987"
+        app:layout_constraintBottom_toTopOf="@id/passwordEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="340dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="22dp"
+        android:autofillHints=""
+        android:background="@drawable/corner_shape"
+        android:hint="@string/user_name"
+        android:inputType="text"
+        android:textColor="#F7E987"
+        android:minHeight="48dp"
+        android:textSize="15dp"
+        android:paddingHorizontal="8dp"
+        android:textColorHint="#E0F7FA"
+        app:layout_constraintBottom_toTopOf="@+id/emailEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:autofillHints=""
+        android:background="@drawable/corner_shape"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="15dp"
+        android:minHeight="48dp"
+        android:paddingHorizontal="8dp"
+        android:textColor="#F7E987"
+        android:textColorHint="#E0F7FA"
+        app:layout_constraintBottom_toTopOf="@id/LoginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry,VisualLintTextFieldSize" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/LoginButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="152dp"
+        android:background="@drawable/corner_shape"
+        android:enabled="false"
+        android:inputType="text"
+        android:paddingStart="4dp"
+        android:text="@string/log_in"
+        android:textColor="#F7E987"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <ProgressBar
+        android:id="@+id/ProgressBar"
+        android:textColor="#325485"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        tools:ignore="InvalidId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
